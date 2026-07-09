@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>diyettemiyiz | Beslenme, Spor ve Kalori Hesaplama Platformu</title>
+<meta name="description" content="Kalori ihtiyacı, BMI, makro besin ve su hesaplayıcıları; spor rehberi, diyet türleri, beslenme mitleri, besin veritabanı ve kişiselleştirilmiş beslenme testi — tek platformda.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.vercel.app/">
+<meta property="og:title" content="diyettemiyiz | Beslenme, Spor ve Kalori Hesaplama Platformu">
+<meta property="og:description" content="Kalori ihtiyacı, BMI, makro besin ve su hesaplayıcıları; spor rehberi, diyet türleri, beslenme mitleri, besin veritabanı ve kişiselleştirilmiş beslenme testi — tek platformda.">
+<meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="diyettemiyiz | Beslenme, Spor ve Kalori Hesaplama Platformu">
+<meta name="twitter:description" content="Kalori ihtiyacı, BMI, makro besin ve su hesaplayıcıları; spor rehberi, diyet türleri, beslenme mitleri, besin veritabanı ve kişiselleştirilmiş beslenme testi — tek platformda.">
+<meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html">Test</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <span class="hero-badge">Kalori · Spor · Beslenme</span>
+    <h1>Bedenini tanı, <em>doğru</em> besle.</h1>
+    <p class="hero-sub">Kalori ihtiyacından makro dağılımına, spor rehberinden besin veritabanına — beslenme yolculuğunda ihtiyacın olan her şey tek yerde.</p>
+    <div class="hero-actions">
+      <a href="hesaplama.html" class="btn btn-primary">Kalori İhtiyacını Hesapla</a>
+      <a href="beslenme-testi.html" class="btn btn-secondary">Beslenme Tarzını Keşfet</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <div class="eyebrow">Neler Var?</div>
+    <h2>Sekiz bölüm, tek platform</h2>
+    <p>İhtiyacına göre dilediğin bölümden başla.</p>
+  </div>
+  <div class="grid">
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v2M15 3v2M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M6 7l1.5-3h9L18 7"></path></svg></div>
+      <h3>Hesaplama Araçları</h3>
+      <p>Kalori ihtiyacı, BMI, makro besin dağılımı, ideal kilo ve su ihtiyacı — hepsi tek sayfada.</p>
+      <a href="hesaplama.html" class="card-link">Hesapla →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3"></circle><circle cx="18" cy="7" r="3"></circle><path d="M8.5 15.5l7-7"></path></svg></div>
+      <h3>Spor Rehberi</h3>
+      <p>Ev egzersizleri, kardiyo ve kuvvet antrenmanı, başlangıç seviyesi programlar.</p>
+      <a href="spor.html" class="card-link">İncele →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 015 5c0 4-5 9-5 9s-5-5-5-9a5 5 0 015-5z"></path><circle cx="12" cy="7" r="2"></circle></svg></div>
+      <h3>Diyet Türleri</h3>
+      <p>Akdeniz, düşük karbonhidrat, aralıklı oruç ve daha fazlası — tarafsız, anlaşılır rehber.</p>
+      <a href="diyet-turleri.html" class="card-link">Keşfet →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4l3 2"></path></svg></div>
+      <h3>Beslenme Mitleri</h3>
+      <p>"Doğru bilinen yanlışlar" — bilimsel çerçevede mit mi gerçek mi, hızlıca öğren.</p>
+      <a href="beslenme-mitleri.html" class="card-link">Gözden Geçir →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></div>
+      <h3>Besin Veritabanı</h3>
+      <p>Binlerce üründe canlı arama (dünya genelinde açık gıda veritabanı) + Türk mutfağından yemekler.</p>
+      <a href="besin-veritabani.html" class="card-link">Ara →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
+      <h3>Beslenme Testi</h3>
+      <p>Birkaç soruyla sana uygun beslenme tarzını keşfet — kişiselleştirilmiş sonuç.</p>
+      <a href="beslenme-testi.html" class="card-link">Teste Başla →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11.8A8 8 0 004 10.2C4 17.5 12 22 12 22z"></path><path d="M12 6v8M9 11h6"></path></svg></div>
+      <h3>Günlük Takip</h3>
+      <p>Su ve kalori hedefini gün içinde takip et — kayıt gerekmez, tarayıcında saklanır.</p>
+      <a href="takip.html" class="card-link">Takibe Başla →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 015 0c0 1.5-2.5 2-2.5 3.5"></path><path d="M12 17h.01"></path></svg></div>
+      <h3>Sıkça Sorulan Sorular</h3>
+      <p>Beslenme, kalori hesaplama ve platform hakkında en çok merak edilenler.</p>
+      <a href="sss.html" class="card-link">Görüntüle →</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Nereden başlayacağını bilmiyor musun?</h2>
+  <p>Günlük kalori ihtiyacını öğrenerek başla — iki dakikanı alır.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Hemen Hesapla</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

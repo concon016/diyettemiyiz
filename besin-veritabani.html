@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Besin Veritabanı | diyettemiyiz</title>
+<meta name="description" content="Türk mutfağından yemekler ve dünya genelinde binlerce ürünü kapsayan açık gıda veritabanında besin değeri arayın.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.vercel.app/besin-veritabani.html">
+<meta property="og:title" content="Besin Veritabanı | diyettemiyiz">
+<meta property="og:description" content="Türk mutfağından yemekler ve dünya genelinde binlerce ürünü kapsayan açık gıda veritabanında besin değeri arayın.">
+<meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Besin Veritabanı | diyettemiyiz">
+<meta name="twitter:description" content="Türk mutfağından yemekler ve dünya genelinde binlerce ürünü kapsayan açık gıda veritabanında besin değeri arayın.">
+<meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html" class="active">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html">Test</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:20px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Gerçek Veri</div>
+    <h2>Besin Veritabanı</h2>
+    <p>Türk mutfağından yemekler + dünya genelinde açık gıda veritabanından (Open Food Facts) canlı ürün araması.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="food-search-bar">
+    <input type="text" id="foodQuery" placeholder="örn. mercimek çorbası, ayran, çikolata...">
+  </div>
+  <div class="food-search-tabs">
+    <button class="calc-tab active" data-src="hepsi">Hepsi</button>
+    <button class="calc-tab" data-src="turk">Türk Mutfağı</button>
+    <button class="calc-tab" data-src="dunya">Dünya Veritabanı</button>
+  </div>
+  <p class="food-hint">Dünya veritabanı sonuçları <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener" style="color:var(--accent);">Open Food Facts</a>'tan canlı çekilir (açık lisanslı, ücretsiz global ürün veritabanı).</p>
+
+  <div class="food-results" id="foodResults">
+    <div class="food-empty">Aramaya başlamak için yukarıya bir besin adı yaz.</div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Kalori hedefini biliyor musun?</h2>
+  <p>Önce günlük kalori ihtiyacını hesapla, sonra besinleri ona göre planla.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Kalori İhtiyacını Hesapla</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="food-search.js"></script>
+</body>
+</html>

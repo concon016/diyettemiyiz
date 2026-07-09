@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sıkça Sorulan Sorular | diyettemiyiz</title>
+<meta name="description" content="Beslenme, kalori hesaplama ve platform hakkında en çok merak edilen sorular.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.vercel.app/sss.html">
+<meta property="og:title" content="Sıkça Sorulan Sorular | diyettemiyiz">
+<meta property="og:description" content="Beslenme, kalori hesaplama ve platform hakkında en çok merak edilen sorular.">
+<meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sıkça Sorulan Sorular | diyettemiyiz">
+<meta name="twitter:description" content="Beslenme, kalori hesaplama ve platform hakkında en çok merak edilen sorular.">
+<meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html">Test</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html" class="active">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:20px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Merak Edilenler</div>
+    <h2>Sıkça Sorulan Sorular</h2>
+    <p>Platform, hesaplayıcılar ve beslenme hakkında en çok sorulanlar.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div style="max-width:760px; margin:0 auto;">
+
+    <details class="faq-item reveal">
+      <summary>Bu site bir diyetisyenin yerini tutar mı?</summary>
+      <p>Hayır. diyettemiyiz genel bilgilendirme ve hesaplama araçları sunar, tıbbi tavsiye veya kişiye özel diyet programı vermez. Sağlık durumuna özel bir beslenme planı için mutlaka bir diyetisyen veya hekime danışmalısın.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Kalori hesaplayıcı ne kadar doğru?</summary>
+      <p>Hesaplayıcı, yaygın kabul gören Mifflin-St Jeor formülüne dayanır ve genel bir tahmin sunar. Bireysel metabolizma farklılıkları nedeniyle gerçek ihtiyacın birkaç yüz kalori sapabilir — bir başlangıç noktası olarak kullan, birkaç hafta sonra sonuçlarına göre ayarla.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Hesaplama sonuçlarım bir yere kaydediliyor mu?</summary>
+      <p>Hayır, hesaplayıcılar tamamen tarayıcında (client-side) çalışır, hiçbir veri sunucuya gönderilmez. Günlük Takip sayfasındaki veriler ise sadece tarayıcının localStorage'ında tutulur.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Besin veritabanındaki bilgiler nereden geliyor?</summary>
+      <p>Türk mutfağı yemekleri elle derlenmiş, yaklaşık değerler içeren bir listedir. "Dünya Veritabanı" sonuçları ise Open Food Facts adlı, dünya genelinde ürün verisi barındıran açık ve ücretsiz bir veritabanından canlı olarak çekilir.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Makro hesaplayıcıdaki yüzdeler nasıl belirlendi?</summary>
+      <p>Kilo verme, koruma ve kilo alma hedefleri için yaygın olarak kullanılan genel protein/karbonhidrat/yağ oranlarına dayanır. Kişisel tercihine göre bu oranları farklı bulman tamamen normaldir, kesin bir kural değildir.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Hangi diyet türü benim için en iyisi?</summary>
+      <p>Tek bir "en iyi" diyet yoktur — en iyi yaklaşım, sürdürebileceğin ve yaşam tarzına uyan olanıdır. Diyet Türleri sayfasını inceleyebilir veya Beslenme Testi ile fikir edinebilirsin.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Su içmek gerçekten kilo vermeme yardımcı olur mu?</summary>
+      <p>Doğrudan yağ yakmaz, ama yemekten önce su içmek tokluk hissine katkı sağlayabilir ve bazen susuzluğu açlıkla karıştırmayı önler. Yeterli su tüketimi genel sağlık için önemlidir.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Spor yapmadan sadece beslenmeyle kilo verebilir miyim?</summary>
+      <p>Evet, kilo kaybı temelde kalori açığına dayanır ve bu sadece beslenmeyle de sağlanabilir. Ancak kuvvet antrenmanı eklemek, kas kütlesini korumaya ve uzun vadeli sonuçlara yardımcı olur.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Aralıklı oruç herkese uygun mu?</summary>
+      <p>Hayır. Hamileler, düzenli ilaç kullananlar, yeme bozukluğu geçmişi olanlar ve bazı kronik rahatsızlığı olan kişiler için uygun olmayabilir. Denemeden önce hekimine danışmanı öneririz.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Sitedeki içerikler kim tarafından hazırlanıyor?</summary>
+      <p>İçerikler genel, yaygın kabul gören beslenme ve egzersiz bilgilerine dayanarak hazırlanmıştır. Kişiye özel tıbbi/beslenme tavsiyesi niteliği taşımaz.</p>
+    </details>
+
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Aradığın cevabı bulamadın mı?</h2>
+  <p>Diyet Türleri ve Beslenme Mitleri sayfalarında daha fazla bilgi bulabilirsin.</p>
+  <a href="diyet-turleri.html" class="btn btn-primary">Diyet Türlerine Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

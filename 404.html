@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayfa Bulunamadı — diyettemiyiz</title>
+<meta name="description" content="Aradığınız sayfa bulunamadı.">
+<meta name="robots" content="noindex">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html">Test</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="min-height:50vh; display:flex; align-items:center; justify-content:center; text-align:center;">
+    <div class="reveal">
+      <p style="font-size:5rem; font-weight:800; color:var(--accent-soft); margin:0; line-height:1;">404</p>
+      <h1 style="font-size:1.8rem; font-weight:700; margin:10px 0;">Bu sayfayı bulamadık.</h1>
+      <p style="color:var(--text-soft); margin:0 0 26px;">Aradığın sayfa taşınmış ya da hiç var olmamış olabilir.</p>
+      <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

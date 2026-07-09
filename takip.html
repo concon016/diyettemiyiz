@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Günlük Takip | diyettemiyiz</title>
+<meta name="description" content="Günlük su ve kalori hedefini takip et — kayıt gerekmez, tüm veriler yalnızca kendi tarayıcında saklanır.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.vercel.app/takip.html">
+<meta property="og:title" content="Günlük Takip | diyettemiyiz">
+<meta property="og:description" content="Günlük su ve kalori hedefini takip et — kayıt gerekmez, tüm veriler yalnızca kendi tarayıcında saklanır.">
+<meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Günlük Takip | diyettemiyiz">
+<meta name="twitter:description" content="Günlük su ve kalori hedefini takip et — kayıt gerekmez, tüm veriler yalnızca kendi tarayıcında saklanır.">
+<meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html">Test</a></li>
+      <li><a href="takip.html" class="active">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:20px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Bugün</div>
+    <h2>Günlük Takip</h2>
+    <p>Su ve kalori hedefini gün içinde takip et. Kayıt gerekmez — tüm veriler yalnızca bu tarayıcıda, kendi cihazında saklanır.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="tracker-grid">
+
+    <div class="tracker-card reveal">
+      <div class="ring-wrap">
+        <svg width="150" height="150" viewBox="0 0 150 150">
+          <circle cx="75" cy="75" r="65" fill="none" stroke="var(--border)" stroke-width="12"></circle>
+          <circle id="waterRing" cx="75" cy="75" r="65" fill="none" stroke="#4aa8ff" stroke-width="12" stroke-linecap="round" stroke-dasharray="408.4" stroke-dashoffset="408.4"></circle>
+        </svg>
+        <div class="ring-label">
+          <div class="n" id="waterCurrent">0</div>
+          <div class="l">ml / <span id="waterGoalLabel">2500</span> ml</div>
+        </div>
+      </div>
+      <h3>Su Takibi</h3>
+      <div class="tr-sub">Günlük hedefini gir, her içtiğinde ekle.</div>
+      <div class="calc-row" style="max-width:280px; margin:0 auto 14px;">
+        <div class="field"><label>Günlük hedef (ml)</label><input type="number" id="waterGoalInput" placeholder="2500" step="100"></div>
+      </div>
+      <div class="tracker-controls">
+        <button data-add-water="200">+200ml</button>
+        <button data-add-water="330">+330ml</button>
+        <button data-add-water="500">+500ml</button>
+      </div>
+    </div>
+
+    <div class="tracker-card reveal">
+      <div class="ring-wrap">
+        <svg width="150" height="150" viewBox="0 0 150 150">
+          <circle cx="75" cy="75" r="65" fill="none" stroke="var(--border)" stroke-width="12"></circle>
+          <circle id="calorieRing" cx="75" cy="75" r="65" fill="none" stroke="#ff8a5c" stroke-width="12" stroke-linecap="round" stroke-dasharray="408.4" stroke-dashoffset="408.4"></circle>
+        </svg>
+        <div class="ring-label">
+          <div class="n" id="calorieCurrent">0</div>
+          <div class="l">kcal / <span id="calorieGoalLabel">2000</span> kcal</div>
+        </div>
+      </div>
+      <h3>Kalori Takibi</h3>
+      <div class="tr-sub">Hedefini Hesaplama Merkezi'nden öğrenip buraya girebilirsin.</div>
+      <div class="calc-row" style="max-width:280px; margin:0 auto 14px;">
+        <div class="field"><label>Günlük hedef (kcal)</label><input type="number" id="calorieGoalInput" placeholder="2000" step="50"></div>
+      </div>
+      <div class="calc-row" style="max-width:280px; margin:0 auto 14px;">
+        <div class="field"><label>Yediğin öğün (kcal)</label><input type="number" id="calorieAddInput" placeholder="örn. 350" step="10"></div>
+      </div>
+      <div class="tracker-controls">
+        <button id="addCalorieBtn">Ekle</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tracker-reset">
+    <button id="resetTracker">Bugünün verilerini sıfırla</button>
+  </div>
+</section>
+
+<div class="disclaimer-box reveal">
+  <strong>Not:</strong> Bu araç bir takip yardımcısıdır, tıbbi izlem yerine geçmez. Veriler hiçbir sunucuya gönderilmez, sadece bu tarayıcıda (localStorage) tutulur ve tarayıcı verilerini temizlersen kaybolur.
+</div>
+
+<div class="cta">
+  <h2>Hedeflerini bilmiyor musun?</h2>
+  <p>Kalori ve su ihtiyacını Hesaplama Merkezi'nde öğrenebilirsin.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Hesaplama Merkezine Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="tracker.js"></script>
+</body>
+</html>

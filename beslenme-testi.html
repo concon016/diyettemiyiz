@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beslenme Testi | diyettemiyiz</title>
+<meta name="description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.vercel.app/beslenme-testi.html">
+<meta property="og:title" content="Beslenme Testi | diyettemiyiz">
+<meta property="og:description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beslenme Testi | diyettemiyiz">
+<meta name="twitter:description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="beslenme-mitleri.html">Mitler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="beslenme-testi.html" class="active">Test</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:20px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Kendini Keşfet</div>
+    <h2>Beslenme Testi</h2>
+    <p>8 soruluk bu kısa test, sana en yakın beslenme tarzı hakkında fikir verir. Tüm soruları cevapladıktan sonra "Sonucu Gör"e bas.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div id="quiz-form"></div>
+  <div style="max-width:720px; margin:24px auto 0; text-align:center;">
+    <button id="grade-btn" class="btn btn-primary">Sonucu Gör</button>
+  </div>
+  <div id="quiz-result"></div>
+</section>
+
+<div class="cta">
+  <h2>Sonucunu daha derinlemesine öğren</h2>
+  <p>Diyet Türleri rehberimizde sana çıkan tarzın detaylarına bakabilirsin.</p>
+  <a href="diyet-turleri.html" class="btn btn-primary">Diyet Türlerine Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="beslenme-mitleri.html">Beslenme Mitleri</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="diet-quiz.js"></script>
+</body>
+</html>
