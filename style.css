@@ -337,9 +337,9 @@ img, svg { max-width: 100%; display: block; }
 .q-option:hover { border-color: var(--accent); }
 .q-option input { accent-color: var(--accent); }
 .q-option.picked { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
-#quiz-result { display: none; max-width: 720px; margin: 30px auto 0; background: var(--accent-soft); border-radius: 20px; padding: 40px; text-align: center; }
-#quiz-result .r-title { font-size: 1.6rem; font-weight: 800; color: var(--accent); margin-bottom: 10px; }
-#quiz-result p { color: var(--text-soft); }
+.quiz-result { display: none; max-width: 720px; margin: 30px auto 0; background: var(--accent-soft); border-radius: 20px; padding: 40px; text-align: center; }
+.quiz-result .r-title { font-size: 1.6rem; font-weight: 800; color: var(--accent); margin-bottom: 10px; }
+.quiz-result p { color: var(--text-soft); }
 
 /* Tracker */
 .tracker-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }

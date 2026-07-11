@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beslenme Testi | diyettemiyiz</title>
-<meta name="description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<title>Testler | diyettemiyiz</title>
+<meta name="description" content="3 farklı kısa test: beslenme tarzın, spor tipin ve beslenme farkındalık seviyen hakkında fikir edin — her biri 8 soru, tek teste bağlı kalma.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://diyettemiyiz.vercel.app/beslenme-testi.html">
-<meta property="og:title" content="Beslenme Testi | diyettemiyiz">
-<meta property="og:description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<meta property="og:title" content="Testler | diyettemiyiz">
+<meta property="og:description" content="3 farklı kısa test: beslenme tarzın, spor tipin ve beslenme farkındalık seviyen hakkında fikir edin — her biri 8 soru, tek teste bağlı kalma.">
 <meta property="og:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Beslenme Testi | diyettemiyiz">
-<meta name="twitter:description" content="8 soruluk kısa test ile sana uygun beslenme tarzını keşfet — Akdeniz, esnek, düşük karbonhidrat veya bitki bazlı beslenme.">
+<meta name="twitter:title" content="Testler | diyettemiyiz">
+<meta name="twitter:description" content="3 farklı kısa test: beslenme tarzın, spor tipin ve beslenme farkındalık seviyen hakkında fikir edin — her biri 8 soru, tek teste bağlı kalma.">
 <meta name="twitter:image" content="https://diyettemiyiz.vercel.app/assets/og-image.png">
 
 <link rel="icon" href="assets/favicon-64.png" type="image/png">
@@ -41,7 +41,7 @@
       <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
       <li><a href="takviyeler.html">Takviyeler</a></li>
       <li><a href="besin-veritabani.html">Besin Ara</a></li>
-      <li><a href="beslenme-testi.html" class="active">Test</a></li>
+      <li><a href="beslenme-testi.html" class="active">Testler</a></li>
       <li><a href="takip.html">Takip</a></li>
       <li><a href="sss.html">SSS</a></li>
     </ul>
@@ -62,22 +62,51 @@
 <section class="section" style="padding-bottom:20px;">
   <div class="section-head reveal">
     <div class="eyebrow">Kendini Keşfet</div>
-    <h2>Beslenme Testi</h2>
-    <p>8 soruluk bu kısa test, sana en yakın beslenme tarzı hakkında fikir verir. Tüm soruları cevapladıktan sonra "Sonucu Gör"e bas.</p>
+    <h2>Testler</h2>
+    <p>Tek bir teste bağlı kalma — 3 farklı 8 soruluk test hazırladık. İstediğin sekmeden başla, tüm soruları cevapladıktan sonra "Sonucu Gör"e bas.</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:0;">
-  <div id="quiz-form"></div>
-  <div style="max-width:720px; margin:24px auto 0; text-align:center;">
-    <button id="grade-btn" class="btn btn-primary">Sonucu Gör</button>
+
+  <div class="supp-tabs">
+    <button class="supp-tab active" data-target="panel-tarz">Beslenme Tarzı</button>
+    <button class="supp-tab" data-target="panel-spor">Spor Tipi</button>
+    <button class="supp-tab" data-target="panel-fark">Beslenme Farkındalığı</button>
   </div>
-  <div id="quiz-result"></div>
+
+  <div class="supp-panel active" id="panel-tarz">
+    <p style="text-align:center;color:var(--text-soft);max-width:640px;margin:0 auto 32px;">Sana en yakın beslenme tarzının Akdeniz, esnek, disiplinli veya bitki bazlı yaklaşımlardan hangisine benzediğini öğren.</p>
+    <div id="quiz-form-tarz"></div>
+    <div style="max-width:720px; margin:24px auto 0; text-align:center;">
+      <button id="grade-btn-tarz" class="btn btn-primary">Sonucu Gör</button>
+    </div>
+    <div id="quiz-result-tarz" class="quiz-result"></div>
+  </div>
+
+  <div class="supp-panel" id="panel-spor">
+    <p style="text-align:center;color:var(--text-soft);max-width:640px;margin:0 auto 32px;">Kardiyo, kuvvet, ev egzersizi veya sosyal/grup sporlarından hangisi sana daha uygun, birlikte keşfedelim.</p>
+    <div id="quiz-form-spor"></div>
+    <div style="max-width:720px; margin:24px auto 0; text-align:center;">
+      <button id="grade-btn-spor" class="btn btn-primary">Sonucu Gör</button>
+    </div>
+    <div id="quiz-result-spor" class="quiz-result"></div>
+  </div>
+
+  <div class="supp-panel" id="panel-fark">
+    <p style="text-align:center;color:var(--text-soft);max-width:640px;margin:0 auto 32px;">Bu test seni tiplere ayırmaz, günlük alışkanlıklarına göre bir farkındalık seviyesi (Başlangıç/Orta/İleri) verir.</p>
+    <div id="quiz-form-fark"></div>
+    <div style="max-width:720px; margin:24px auto 0; text-align:center;">
+      <button id="grade-btn-fark" class="btn btn-primary">Sonucu Gör</button>
+    </div>
+    <div id="quiz-result-fark" class="quiz-result"></div>
+  </div>
+
 </section>
 
 <div class="cta">
   <h2>Sonucunu daha derinlemesine öğren</h2>
-  <p>Diyet Türleri rehberimizde sana çıkan tarzın detaylarına bakabilirsin.</p>
+  <p>Diyet Türleri ve Spor Rehberi sayfalarımızda sana çıkan sonuçların detaylarına bakabilirsin.</p>
   <a href="diyet-turleri.html" class="btn btn-primary">Diyet Türlerine Git</a>
 </div>
 
@@ -91,7 +120,7 @@
     <a href="diyet-turleri.html">Diyet Türleri</a>
     <a href="takviyeler.html">Takviyeler</a>
     <a href="besin-veritabani.html">Besin Veritabanı</a>
-    <a href="beslenme-testi.html">Beslenme Testi</a>
+    <a href="beslenme-testi.html">Testler</a>
     <a href="takip.html">Günlük Takip</a>
     <a href="sss.html">SSS</a>
   </div>
@@ -101,5 +130,21 @@
 
 <script src="script.js"></script>
 <script src="diet-quiz.js"></script>
+<script src="spor-testi.js"></script>
+<script src="farkindalik-testi.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".supp-tab");
+    const panels = document.querySelectorAll(".supp-panel");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.target).classList.add("active");
+      });
+    });
+  });
+</script>
 </body>
 </html>

@@ -95,7 +95,7 @@ const DIET_RESULTS = {
 const DIET_KEYS = ["esnek", "akdeniz", "disiplinli", "bitki"];
 
 function renderDietQuiz() {
-  const container = document.getElementById("quiz-form");
+  const container = document.getElementById("quiz-form-tarz");
   if (!container) return;
   DIET_QUIZ.forEach((item, i) => {
     const block = document.createElement("div");
@@ -104,7 +104,7 @@ function renderDietQuiz() {
       .map(
         (opt, j) => `
       <label class="q-option">
-        <input type="radio" name="q${i}" value="${j}">
+        <input type="radio" name="q-tarz-${i}" value="${j}">
         <span>${opt}</span>
       </label>
     `
@@ -130,7 +130,7 @@ function gradeDietQuiz() {
   let answered = 0;
 
   DIET_QUIZ.forEach((item, i) => {
-    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    const selected = document.querySelector(`input[name="q-tarz-${i}"]:checked`);
     if (selected) {
       answered++;
       const idx = parseInt(selected.value, 10);
@@ -146,7 +146,7 @@ function gradeDietQuiz() {
   });
 
   const result = DIET_RESULTS[winner];
-  const resultBox = document.getElementById("quiz-result");
+  const resultBox = document.getElementById("quiz-result-tarz");
   resultBox.style.display = "block";
   resultBox.innerHTML = `<div class="r-title">${result.title}</div><p>${result.text}</p>`;
   resultBox.scrollIntoView({ behavior: "smooth" });
@@ -154,6 +154,6 @@ function gradeDietQuiz() {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderDietQuiz();
-  const btn = document.getElementById("grade-btn");
+  const btn = document.getElementById("grade-btn-tarz");
   if (btn) btn.addEventListener("click", gradeDietQuiz);
 });
