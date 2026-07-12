@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
   scrollProgress.style.width = pct + "%";
-});
+}, { passive: true });
 
 // Tab title trick
 const originalTitle = document.title;
