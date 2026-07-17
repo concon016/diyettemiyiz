@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N94TYPPVZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-N94TYPPVZF");
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Hesaplama — Vücut Kitle Endeksi Hesaplayıcı | diyettemiyiz</title>
+<meta name="description" content="Boy ve kilona göre BMI (Vücut Kitle Endeksi) değerini anında hesapla. Zayıf, normal, fazla kilolu ve obez aralıkları, BMI'nin ne anlama geldiği ve sınırlamaları.">
+<link rel="canonical" href="https://diyettemiyiz.com/bmi-hesaplama.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.com/bmi-hesaplama.html">
+<meta property="og:title" content="BMI Hesaplama — Vücut Kitle Endeksi Hesaplayıcı | diyettemiyiz">
+<meta property="og:description" content="Boy ve kilona göre BMI değerini anında hesapla, kategori aralıklarını ve sınırlamalarını öğren.">
+<meta property="og:image" content="https://diyettemiyiz.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMI Hesaplama — Vücut Kitle Endeksi Hesaplayıcı | diyettemiyiz">
+<meta name="twitter:description" content="Boy ve kilona göre BMI değerini anında hesapla, kategori aralıklarını öğren.">
+<meta name="twitter:image" content="https://diyettemiyiz.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", saved || "light");
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"BMI nedir?","acceptedAnswer":{"@type":"Answer","text":"BMI (Body Mass Index / Vücut Kitle Endeksi), boy ve kiloya dayanan, kişinin genel kilo kategorisini gösteren basit bir orandır. Kilo (kg) / (Boy (m) x Boy (m)) formülüyle hesaplanır."}},
+{"@type":"Question","name":"BMI kaç olmalı?","acceptedAnswer":{"@type":"Answer","text":"18.5-24.9 arası genellikle normal aralık kabul edilir. 18.5 altı zayıf, 25-29.9 arası fazla kilolu, 30 üzeri obez aralığı olarak sınıflandırılır."}},
+{"@type":"Question","name":"BMI güvenilir bir ölçüm müdür?","acceptedAnswer":{"@type":"Answer","text":"BMI kas kütlesi ile yağ kütlesini ayırt etmez, bu yüzden kas kütlesi yüksek sporcularda yanıltıcı sonuç verebilir. Genel bir tarama aracıdır, kesin bir sağlık teşhisi değildir."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html" class="active">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="takviyeler.html">Takviyeler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="kalori-tablosu.html">Kalori Tablosu</a></li>
+      <li><a href="beslenme-testi.html">Testler</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:10px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Hesaplayıcı</div>
+    <h1 style="font-size:2rem; margin:0 0 10px;">BMI Hesaplama</h1>
+    <p>Boy ve kilona göre Vücut Kitle Endeksi'ni (BMI) anında hesapla, hangi kategoriye girdiğini öğren.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+
+  <div class="calc-panel active" id="panel-bmi">
+    <h3>Vücut Kitle Endeksi (BMI)</h3>
+    <p class="calc-desc">Boy ve kilona göre genel bir kilo kategorisi fikri verir. Kas kütlesi yüksek kişilerde yanıltıcı olabileceğini unutma.</p>
+
+    <div class="calc-row">
+      <div class="field"><label>Boy (cm)</label><input type="number" id="bmiBoy" placeholder="165" min="100" max="230"></div>
+      <div class="field"><label>Kilo (kg)</label><input type="number" id="bmiKilo" placeholder="60" min="30" max="250"></div>
+    </div>
+    <button class="btn btn-primary calc-submit" id="btnBmi">Hesapla</button>
+
+    <div class="result-card" id="resultBmi">
+      <div><span class="result-value" id="resBmiValue">–</span></div>
+      <div class="result-label" id="resBmiLabel">–</div>
+    </div>
+  </div>
+
+  <div style="max-width:760px; margin:0 auto; line-height:1.7;">
+    <h2 style="font-size:1.3rem;">BMI nedir, nasıl hesaplanır?</h2>
+    <p>BMI (Body Mass Index / Vücut Kitle Endeksi), boy ve kilo arasındaki orana dayanan, dünya genelinde yaygın kullanılan basit bir tarama ölçütüdür. Formülü şudur: <strong>Kilo (kg) ÷ (Boy (m) × Boy (m))</strong>. Örneğin 165 cm boyunda, 60 kg ağırlığında biri için: 60 ÷ (1.65 × 1.65) ≈ 22.0 — bu da "normal aralık" kategorisine denk gelir.</p>
+
+    <h2 style="font-size:1.3rem;">BMI kategorileri</h2>
+    <ul style="line-height:1.9;">
+      <li><strong>18.5 altı</strong> — Zayıf</li>
+      <li><strong>18.5 – 24.9</strong> — Normal aralık</li>
+      <li><strong>25 – 29.9</strong> — Fazla kilolu</li>
+      <li><strong>30 ve üzeri</strong> — Obez aralığı</li>
+    </ul>
+
+    <h2 style="font-size:1.3rem;">BMI'nin sınırlamaları</h2>
+    <p>BMI, kas kütlesi ile yağ kütlesini ayırt etmez. Düzenli spor yapan, kas kütlesi yüksek kişilerde gerçek yağ oranı düşük olsa bile BMI "fazla kilolu" aralığına çıkabilir. Bu yüzden BMI tek başına kesin bir sağlık göstergesi değil, genel bir tarama aracı olarak değerlendirilmelidir — daha kişiselleştirilmiş bir değerlendirme için <a href="hesaplama.html" style="color:var(--accent);">Makro Dağılımı</a> ve <a href="hesaplama.html" style="color:var(--accent);">İdeal Kilo</a> hesaplayıcılarımıza da göz atabilirsin.</p>
+  </div>
+
+</section>
+
+<div class="cta">
+  <h2>Günlük kalori ihtiyacını da öğrenmek ister misin?</h2>
+  <p>Kalori, makro, ideal kilo ve su ihtiyacı hesaplayıcılarının hepsi tek sayfada.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Tüm Hesaplayıcılara Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="takviyeler.html">Takviyeler</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="kalori-tablosu.html">Kalori Tablosu</a>
+    <a href="beslenme-testi.html">Testler</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="credit">Bu site <a href="https://canwebco.com" target="_blank" rel="noopener">canwebco</a> tarafından tasarlanmıştır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>

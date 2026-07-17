@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N94TYPPVZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-N94TYPPVZF");
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İdeal Kilo Hesaplama — Boyuna Göre İdeal Kilo Hesaplayıcı | diyettemiyiz</title>
+<meta name="description" content="Boy ve cinsiyete göre ideal kilo aralığını hesapla. Devine formülüne dayanan referans hesaplama, anında sonuç.">
+<link rel="canonical" href="https://diyettemiyiz.com/ideal-kilo-hesaplama.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.com/ideal-kilo-hesaplama.html">
+<meta property="og:title" content="İdeal Kilo Hesaplama — Boyuna Göre İdeal Kilo Hesaplayıcı | diyettemiyiz">
+<meta property="og:description" content="Boy ve cinsiyete göre ideal kilo aralığını hesapla, anında sonuç al.">
+<meta property="og:image" content="https://diyettemiyiz.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="İdeal Kilo Hesaplama | diyettemiyiz">
+<meta name="twitter:description" content="Boy ve cinsiyete göre ideal kilo aralığını hesapla.">
+<meta name="twitter:image" content="https://diyettemiyiz.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", saved || "light");
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"İdeal kilo nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Yaygın kullanılan yöntemlerden biri Devine formülüdür: erkekler için 50 kg + boyun 152 cm üzerindeki her 2.54 cm için 2.3 kg, kadınlar için 45.5 kg + aynı artış. Bu, kesin değil, genel bir referans aralığıdır."}},
+{"@type":"Question","name":"İdeal kilo herkes için aynı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kas kütlesi, vücut yapısı, kemik yoğunluğu gibi faktörler kişiden kişiye değişir. İdeal kilo formülleri genel bir yönlendirme sunar, kesin bir hedef olarak değil referans olarak kullanılmalıdır."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html" class="active">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="takviyeler.html">Takviyeler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="kalori-tablosu.html">Kalori Tablosu</a></li>
+      <li><a href="beslenme-testi.html">Testler</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:10px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Hesaplayıcı</div>
+    <h1 style="font-size:2rem; margin:0 0 10px;">İdeal Kilo Hesaplama</h1>
+    <p>Boy ve cinsiyete göre ideal kilo aralığını hesapla.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+
+  <div class="calc-panel active" id="panel-ideal">
+    <h3>İdeal Kilo Aralığı</h3>
+    <p class="calc-desc">Devine formülüne dayanan genel bir referans aralığıdır, kesin bir hedef olarak değil, yönlendirici olarak değerlendir.</p>
+
+    <div class="segmented" id="idealCinsiyet" style="margin-bottom:18px;">
+      <button class="active" data-val="kadin">Kadın</button>
+      <button data-val="erkek">Erkek</button>
+    </div>
+    <div class="calc-row">
+      <div class="field"><label>Boy (cm)</label><input type="number" id="idealBoy" placeholder="165" min="100" max="230"></div>
+    </div>
+    <button class="btn btn-primary calc-submit" id="btnIdeal">Hesapla</button>
+
+    <div class="result-card" id="resultIdeal">
+      <div><span class="result-value" id="resIdealValue">–</span><span class="result-unit">kg</span></div>
+      <div class="result-label">Yaklaşık ideal kilo referansı</div>
+    </div>
+  </div>
+
+  <div style="max-width:760px; margin:0 auto; line-height:1.7;">
+    <h2 style="font-size:1.3rem;">İdeal kilo nasıl hesaplanır?</h2>
+    <p>Bu hesaplayıcı, tıp literatüründe yaygın kullanılan <strong>Devine formülü</strong>'ne dayanır. Erkekler için 152 cm boy 50 kg baz alınır, kadınlar için 45.5 kg — bu baz üzerine, 152 cm'yi aşan her 2.54 cm (1 inç) için 2.3 kg eklenir. Sonuç, kişinin boyuna göre genel bir referans kilo aralığıdır.</p>
+
+    <h2 style="font-size:1.3rem;">Bu sonuç kesin bir hedef mi?</h2>
+    <p>Hayır. İdeal kilo formülleri, kas kütlesi, kemik yapısı, vücut kompozisyonu gibi bireysel farklılıkları hesaba katmaz. Sonucu kesin bir hedef değil, genel bir referans noktası olarak değerlendir. Daha detaylı bir değerlendirme için <a href="bmi-hesaplama.html" style="color:var(--accent);">BMI Hesaplama</a> ve <a href="makro-hesaplama.html" style="color:var(--accent);">Makro Hesaplama</a> araçlarımıza da bakabilirsin.</p>
+  </div>
+
+</section>
+
+<div class="cta">
+  <h2>Günlük kalori ihtiyacını da öğrenmek ister misin?</h2>
+  <p>Kalori, makro, BMI ve su ihtiyacı hesaplayıcılarının hepsi tek sayfada.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Tüm Hesaplayıcılara Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="takviyeler.html">Takviyeler</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="kalori-tablosu.html">Kalori Tablosu</a>
+    <a href="beslenme-testi.html">Testler</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="credit">Bu site <a href="https://canwebco.com" target="_blank" rel="noopener">canwebco</a> tarafından tasarlanmıştır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N94TYPPVZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-N94TYPPVZF");
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makro Hesaplama — Protein, Karbonhidrat, Yağ Hesaplayıcı | diyettemiyiz</title>
+<meta name="description" content="Günlük kalori hedefine göre protein, karbonhidrat ve yağ gramajını hesapla. Kilo verme, koruma ve kilo alma hedefine özel makro dağılımı önerileri.">
+<link rel="canonical" href="https://diyettemiyiz.com/makro-hesaplama.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.com/makro-hesaplama.html">
+<meta property="og:title" content="Makro Hesaplama — Protein, Karbonhidrat, Yağ Hesaplayıcı | diyettemiyiz">
+<meta property="og:description" content="Günlük kalori hedefine göre protein, karbonhidrat ve yağ gramajını hesapla.">
+<meta property="og:image" content="https://diyettemiyiz.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Makro Hesaplama — Protein, Karbonhidrat, Yağ Hesaplayıcı | diyettemiyiz">
+<meta name="twitter:description" content="Günlük kalori hedefine göre protein, karbonhidrat ve yağ gramajını hesapla.">
+<meta name="twitter:image" content="https://diyettemiyiz.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", saved || "light");
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Makro nedir?","acceptedAnswer":{"@type":"Answer","text":"Makro besinler (makrolar), vücuda enerji sağlayan üç ana besin grubudur: protein, karbonhidrat ve yağ. Her birinin gram başına farklı kalori değeri vardır: protein ve karbonhidrat 4 kcal/g, yağ 9 kcal/g."}},
+{"@type":"Question","name":"Makro oranları nasıl belirlenir?","acceptedAnswer":{"@type":"Answer","text":"Hedefe göre değişir: kilo verirken genellikle daha yüksek protein oranı (yaklaşık %35), kilo korurken dengeli bir dağılım (%30 protein, %40 karbonhidrat, %30 yağ), kilo alırken daha yüksek karbonhidrat oranı önerilir."}},
+{"@type":"Question","name":"Günde ne kadar protein almalıyım?","acceptedAnswer":{"@type":"Answer","text":"Genel bir referans olarak kilogram başına 1.6-2.2 gram protein, aktif bireyler ve kas kütlesi hedefleyenler için yaygın olarak önerilir. Kesin ihtiyaç kişiye, aktivite seviyesine ve hedefe göre değişir."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html" class="active">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="takviyeler.html">Takviyeler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="kalori-tablosu.html">Kalori Tablosu</a></li>
+      <li><a href="beslenme-testi.html">Testler</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:10px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Hesaplayıcı</div>
+    <h1 style="font-size:2rem; margin:0 0 10px;">Makro Hesaplama</h1>
+    <p>Günlük kalori hedefine göre protein, karbonhidrat ve yağ gramajını hesapla.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+
+  <div class="calc-panel active" id="panel-makro">
+    <h3>Makro Besin Dağılımı</h3>
+    <p class="calc-desc">Günlük kalori hedefine göre protein, karbonhidrat ve yağ gramajı önerisi. Kalori ihtiyacını bilmiyorsan önce <a href="hesaplama.html" style="color:var(--accent);">Kalori İhtiyacı</a> hesaplayıcısına bak.</p>
+
+    <div class="calc-row">
+      <div class="field"><label>Günlük Kalori Hedefi (kcal)</label><input type="number" id="makroKalori" placeholder="2000" min="800" max="6000"></div>
+    </div>
+    <div class="field" style="margin-bottom:18px;">
+      <label>Hedefin</label>
+      <div class="segmented" id="makroHedef">
+        <button class="active" data-val="ver">Kilo Ver</button>
+        <button data-val="koru">Koru</button>
+        <button data-val="al">Kilo Al</button>
+      </div>
+    </div>
+    <button class="btn btn-primary calc-submit" id="btnMakro">Hesapla</button>
+
+    <div class="result-card" id="resultMakro">
+      <div class="macro-bar" id="macroBar">
+        <span id="macroBarProtein" style="background:#2f9e6e;"></span>
+        <span id="macroBarCarb" style="background:#ff8a5c;"></span>
+        <span id="macroBarFat" style="background:#f0b429;"></span>
+      </div>
+      <div class="macro-legend">
+        <div class="item"><span class="dot" style="background:#2f9e6e;"></span>Protein</div>
+        <div class="item"><span class="dot" style="background:#ff8a5c;"></span>Karbonhidrat</div>
+        <div class="item"><span class="dot" style="background:#f0b429;"></span>Yağ</div>
+      </div>
+      <div class="result-sub-grid">
+        <div class="result-sub"><div class="n" id="resMakroProtein">–</div><div class="l">Protein (g)</div></div>
+        <div class="result-sub"><div class="n" id="resMakroCarb">–</div><div class="l">Karbonhidrat (g)</div></div>
+        <div class="result-sub"><div class="n" id="resMakroFat">–</div><div class="l">Yağ (g)</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:760px; margin:0 auto; line-height:1.7;">
+    <h2 style="font-size:1.3rem;">Makro nedir?</h2>
+    <p>Makro besinler, vücuda enerji sağlayan üç ana grup besindir: <strong>protein</strong>, <strong>karbonhidrat</strong> ve <strong>yağ</strong>. Her birinin gram başına farklı kalori değeri vardır — protein ve karbonhidrat 4 kcal/g, yağ ise 9 kcal/g. Toplam kalori hedefin sabit kalsa bile, bu üç besinin oranını değiştirerek farklı hedeflere (kilo verme, kas kazanımı, koruma) yönelik beslenebilirsin.</p>
+
+    <h2 style="font-size:1.3rem;">Hedefe göre makro oranları</h2>
+    <ul style="line-height:1.9;">
+      <li><strong>Kilo Ver</strong> — %35 protein / %35 karbonhidrat / %30 yağ (yüksek protein, tokluk ve kas korumasına yardımcı olur)</li>
+      <li><strong>Koru</strong> — %30 protein / %40 karbonhidrat / %30 yağ (dengeli, sürdürülebilir bir dağılım)</li>
+      <li><strong>Kilo Al</strong> — %30 protein / %45 karbonhidrat / %25 yağ (enerji fazlası için karbonhidrat ağırlıklı)</li>
+    </ul>
+
+    <h2 style="font-size:1.3rem;">Kalori hedefini nereden bulacağım?</h2>
+    <p>Makro hesaplaması, günlük kalori hedefine dayanır. Bu hedefi bilmiyorsan önce <a href="hesaplama.html" style="color:var(--accent);">Kalori İhtiyacı</a> hesaplayıcımızla günlük ihtiyacını (TDEE) öğren, sonucu buraya girip makro dağılımını hesapla.</p>
+  </div>
+
+</section>
+
+<div class="cta">
+  <h2>Kalori hedefini biliyor musun?</h2>
+  <p>Önce günlük kalori ihtiyacını hesapla, sonra makro dağılımını buradan bul.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Kalori İhtiyacını Hesapla</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="takviyeler.html">Takviyeler</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="kalori-tablosu.html">Kalori Tablosu</a>
+    <a href="beslenme-testi.html">Testler</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="credit">Bu site <a href="https://canwebco.com" target="_blank" rel="noopener">canwebco</a> tarafından tasarlanmıştır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>

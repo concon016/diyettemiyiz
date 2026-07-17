@@ -9,6 +9,22 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://diyettemiyiz.com/bmi-hesaplama.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diyettemiyiz.com/makro-hesaplama.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diyettemiyiz.com/ideal-kilo-hesaplama.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diyettemiyiz.com/su-ihtiyaci-hesaplama.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://diyettemiyiz.com/spor.html</loc>
     <priority>0.8</priority>
   </url>

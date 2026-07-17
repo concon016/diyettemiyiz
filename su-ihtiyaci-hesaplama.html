@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N94TYPPVZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-N94TYPPVZF");
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Su İhtiyacı Hesaplama — Günlük Su Tüketimi Hesaplayıcı | diyettemiyiz</title>
+<meta name="description" content="Kilona göre günlük su ihtiyacını litre cinsinden hesapla. Ne kadar su içmelisin, egzersiz ve sıcak havanın etkisi.">
+<link rel="canonical" href="https://diyettemiyiz.com/su-ihtiyaci-hesaplama.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diyettemiyiz.com/su-ihtiyaci-hesaplama.html">
+<meta property="og:title" content="Su İhtiyacı Hesaplama — Günlük Su Tüketimi Hesaplayıcı | diyettemiyiz">
+<meta property="og:description" content="Kilona göre günlük su ihtiyacını litre cinsinden hesapla.">
+<meta property="og:image" content="https://diyettemiyiz.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Su İhtiyacı Hesaplama | diyettemiyiz">
+<meta name="twitter:description" content="Kilona göre günlük su ihtiyacını litre cinsinden hesapla.">
+<meta name="twitter:image" content="https://diyettemiyiz.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", saved || "light");
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Günde ne kadar su içmeliyim?","acceptedAnswer":{"@type":"Answer","text":"Genel bir referans olarak kilogram başına 33 ml su önerilir. Örneğin 70 kg bir kişi için yaklaşık 2.3 litre/gün. Egzersiz, sıcak hava ve terleme bu ihtiyacı artırır."}},
+{"@type":"Question","name":"Çok su içmek zararlı mı?","acceptedAnswer":{"@type":"Answer","text":"Aşırı miktarda su tüketimi (kısa sürede çok fazla) nadir durumlarda sodyum dengesini bozabilir, ancak normal günlük tüketim aralığında bu risk düşüktür. Susuzluk hissini takip etmek genellikle yeterli bir göstergedir."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">diyette<span class="logo-dim">miyiz</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hesaplama.html" class="active">Hesaplama</a></li>
+      <li><a href="spor.html">Spor</a></li>
+      <li><a href="diyet-turleri.html">Diyet Türleri</a></li>
+      <li><a href="takviyeler.html">Takviyeler</a></li>
+      <li><a href="besin-veritabani.html">Besin Ara</a></li>
+      <li><a href="kalori-tablosu.html">Kalori Tablosu</a></li>
+      <li><a href="beslenme-testi.html">Testler</a></li>
+      <li><a href="takip.html">Takip</a></li>
+      <li><a href="sss.html">SSS</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-track"></span>
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-bottom:10px;">
+  <div class="section-head reveal">
+    <div class="eyebrow">Hesaplayıcı</div>
+    <h1 style="font-size:2rem; margin:0 0 10px;">Su İhtiyacı Hesaplama</h1>
+    <p>Kilona göre günlük su ihtiyacını litre cinsinden hesapla.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+
+  <div class="calc-panel active" id="panel-su">
+    <h3>Günlük Su İhtiyacı</h3>
+    <p class="calc-desc">Kilona göre genel bir su tüketim önerisi. Sıcak hava ve yoğun egzersiz ihtiyacı artırır.</p>
+
+    <div class="calc-row">
+      <div class="field"><label>Kilo (kg)</label><input type="number" id="suKilo" placeholder="60" min="30" max="250"></div>
+    </div>
+    <button class="btn btn-primary calc-submit" id="btnSu">Hesapla</button>
+
+    <div class="result-card" id="resultSu">
+      <div><span class="result-value" id="resSuValue">–</span><span class="result-unit">litre/gün</span></div>
+      <div class="result-label">Önerilen günlük su tüketimi</div>
+    </div>
+  </div>
+
+  <div style="max-width:760px; margin:0 auto; line-height:1.7;">
+    <h2 style="font-size:1.3rem;">Günde ne kadar su içmeliyim?</h2>
+    <p>Yaygın kullanılan bir referans formülü, kilogram başına yaklaşık <strong>33 ml</strong> su tüketimidir. Örneğin 70 kg bir kişi için bu, günde yaklaşık 2.3 litre suya denk gelir. Bu miktar yiyeceklerden alınan sıvıyı değil, doğrudan içilen suyu ifade eder.</p>
+
+    <h2 style="font-size:1.3rem;">İhtiyacı artıran faktörler</h2>
+    <ul style="line-height:1.9;">
+      <li><strong>Egzersiz</strong> — terleme yoluyla kaybedilen sıvı, ekstra su tüketimi gerektirir</li>
+      <li><strong>Sıcak/nemli hava</strong> — vücut daha fazla terler, su ihtiyacı artar</li>
+      <li><strong>Yüksek irtifa</strong> — nefes yoluyla sıvı kaybı artar</li>
+      <li><strong>Hamilelik/emzirme</strong> — vücudun sıvı ihtiyacı artar (bu durumda bir sağlık uzmanına danışmak en doğrusudur)</li>
+    </ul>
+
+    <h2 style="font-size:1.3rem;">Yeterince su içtiğimi nasıl anlarım?</h2>
+    <p>Susuzluk hissi ve idrar renginin açık sarı olması, genellikle yeterli hidrasyonun basit göstergeleridir. Koyu renkli idrar, daha fazla su içmen gerektiğinin bir işareti olabilir.</p>
+  </div>
+
+</section>
+
+<div class="cta">
+  <h2>Günlük kalori ihtiyacını da öğrenmek ister misin?</h2>
+  <p>Kalori, makro, BMI ve ideal kilo hesaplayıcılarının hepsi tek sayfada.</p>
+  <a href="hesaplama.html" class="btn btn-primary">Tüm Hesaplayıcılara Git</a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hesaplama.html">Hesaplama</a>
+    <a href="spor.html">Spor</a>
+    <a href="diyet-turleri.html">Diyet Türleri</a>
+    <a href="takviyeler.html">Takviyeler</a>
+    <a href="besin-veritabani.html">Besin Veritabanı</a>
+    <a href="kalori-tablosu.html">Kalori Tablosu</a>
+    <a href="beslenme-testi.html">Testler</a>
+    <a href="takip.html">Günlük Takip</a>
+    <a href="sss.html">SSS</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+  </div>
+  <p>&copy; 2026 diyettemiyiz. Tüm hakları saklıdır.</p>
+  <p class="credit">Bu site <a href="https://canwebco.com" target="_blank" rel="noopener">canwebco</a> tarafından tasarlanmıştır.</p>
+  <p class="disclaimer">Bu platformdaki hesaplama araçları ve içerikler genel bilgilendirme amaçlıdır, tıbbi tavsiye veya kişiye özel diyet programı yerine geçmez. Sağlık durumunuza özel beslenme planı için mutlaka bir diyetisyen veya hekime danışın.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>
