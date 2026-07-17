@@ -169,7 +169,7 @@ img, svg { max-width: 100%; display: block; }
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
-  .nav-links.open { max-height: 60vh; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+  .nav-links.open { max-height: 900px; overflow-y: visible; }
   .nav-links li { width: 100%; }
   .nav-links a { display: block; padding: 14px 24px; width: 100%; border-top: 1px solid var(--border); }
 }
