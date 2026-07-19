@@ -718,5 +718,805 @@
     "protein": 0,
     "karbonhidrat": 30,
     "yag": 0
+  },
+  {
+    "ad": "Tarhana Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 130,
+    "protein": 5,
+    "karbonhidrat": 18,
+    "yag": 4
+  },
+  {
+    "ad": "İşkembe Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 180,
+    "protein": 12,
+    "karbonhidrat": 6,
+    "yag": 12
+  },
+  {
+    "ad": "Paça Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 190,
+    "protein": 14,
+    "karbonhidrat": 4,
+    "yag": 13
+  },
+  {
+    "ad": "Şehriye Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 110,
+    "protein": 4,
+    "karbonhidrat": 17,
+    "yag": 3
+  },
+  {
+    "ad": "Yoğurt Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 125,
+    "protein": 6,
+    "karbonhidrat": 14,
+    "yag": 5
+  },
+  {
+    "ad": "Balık Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 140,
+    "protein": 13,
+    "karbonhidrat": 8,
+    "yag": 6
+  },
+  {
+    "ad": "Brokoli Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 95,
+    "protein": 4,
+    "karbonhidrat": 10,
+    "yag": 4
+  },
+  {
+    "ad": "Kremalı Mantar Çorbası",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 160,
+    "protein": 4,
+    "karbonhidrat": 12,
+    "yag": 11
+  },
+  {
+    "ad": "Un Çorbası (Tarhana Usulü)",
+    "porsiyon": "1 kase (~200ml)",
+    "kcal": 115,
+    "protein": 3,
+    "karbonhidrat": 19,
+    "yag": 3
+  },
+  {
+    "ad": "Etli Nohut",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 320,
+    "protein": 20,
+    "karbonhidrat": 30,
+    "yag": 13
+  },
+  {
+    "ad": "Kadınbudu Köfte",
+    "porsiyon": "4 adet (~200g)",
+    "kcal": 380,
+    "protein": 20,
+    "karbonhidrat": 24,
+    "yag": 22
+  },
+  {
+    "ad": "İçli Köfte",
+    "porsiyon": "3 adet (~180g)",
+    "kcal": 340,
+    "protein": 14,
+    "karbonhidrat": 38,
+    "yag": 15
+  },
+  {
+    "ad": "Çökertme Kebabı",
+    "porsiyon": "1 porsiyon (~280g)",
+    "kcal": 480,
+    "protein": 30,
+    "karbonhidrat": 22,
+    "yag": 30
+  },
+  {
+    "ad": "Beyti Kebap",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 460,
+    "protein": 28,
+    "karbonhidrat": 20,
+    "yag": 30
+  },
+  {
+    "ad": "Orman Kebabı",
+    "porsiyon": "1 porsiyon (~280g)",
+    "kcal": 350,
+    "protein": 27,
+    "karbonhidrat": 12,
+    "yag": 21
+  },
+  {
+    "ad": "Et Güveç",
+    "porsiyon": "1 porsiyon (~300g)",
+    "kcal": 340,
+    "protein": 26,
+    "karbonhidrat": 16,
+    "yag": 18
+  },
+  {
+    "ad": "Tavuk Şiş",
+    "porsiyon": "1 porsiyon (4 şiş)",
+    "kcal": 300,
+    "protein": 32,
+    "karbonhidrat": 4,
+    "yag": 17
+  },
+  {
+    "ad": "Kuzu Pirzola (Izgara)",
+    "porsiyon": "3 adet (~200g)",
+    "kcal": 420,
+    "protein": 30,
+    "karbonhidrat": 0,
+    "yag": 33
+  },
+  {
+    "ad": "Balık Buğulama",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 220,
+    "protein": 26,
+    "karbonhidrat": 6,
+    "yag": 10
+  },
+  {
+    "ad": "Karides Güveç",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 260,
+    "protein": 22,
+    "karbonhidrat": 10,
+    "yag": 14
+  },
+  {
+    "ad": "Etli Kabak Dolması",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 280,
+    "protein": 16,
+    "karbonhidrat": 20,
+    "yag": 15
+  },
+  {
+    "ad": "Tavuk Sote",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 290,
+    "protein": 27,
+    "karbonhidrat": 10,
+    "yag": 15
+  },
+  {
+    "ad": "Zeytinyağlı Enginar",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 140,
+    "protein": 4,
+    "karbonhidrat": 16,
+    "yag": 7
+  },
+  {
+    "ad": "Zeytinyağlı Barbunya",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 190,
+    "protein": 8,
+    "karbonhidrat": 22,
+    "yag": 8
+  },
+  {
+    "ad": "Zeytinyağlı Bezelye",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 170,
+    "protein": 7,
+    "karbonhidrat": 18,
+    "yag": 8
+  },
+  {
+    "ad": "Zeytinyağlı Yer Elması",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 160,
+    "protein": 3,
+    "karbonhidrat": 22,
+    "yag": 7
+  },
+  {
+    "ad": "Zeytinyağlı Kereviz",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 150,
+    "protein": 3,
+    "karbonhidrat": 17,
+    "yag": 8
+  },
+  {
+    "ad": "Zeytinyağlı Dolma Biber",
+    "porsiyon": "3 adet (~220g)",
+    "kcal": 210,
+    "protein": 5,
+    "karbonhidrat": 24,
+    "yag": 11
+  },
+  {
+    "ad": "Zeytinyağlı Patlıcan Kızartma",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 230,
+    "protein": 4,
+    "karbonhidrat": 18,
+    "yag": 17
+  },
+  {
+    "ad": "Zeytinyağlı Havuç",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 130,
+    "protein": 3,
+    "karbonhidrat": 16,
+    "yag": 6
+  },
+  {
+    "ad": "Zeytinyağlı Enginar Dolması",
+    "porsiyon": "2 adet (~220g)",
+    "kcal": 180,
+    "protein": 5,
+    "karbonhidrat": 20,
+    "yag": 9
+  },
+  {
+    "ad": "Çiğ Börek",
+    "porsiyon": "1 adet (~150g)",
+    "kcal": 380,
+    "protein": 12,
+    "karbonhidrat": 32,
+    "yag": 22
+  },
+  {
+    "ad": "Kol Böreği",
+    "porsiyon": "1 dilim (~120g)",
+    "kcal": 320,
+    "protein": 9,
+    "karbonhidrat": 28,
+    "yag": 19
+  },
+  {
+    "ad": "Peynirli Pide",
+    "porsiyon": "1 adet (~250g)",
+    "kcal": 550,
+    "protein": 22,
+    "karbonhidrat": 60,
+    "yag": 24
+  },
+  {
+    "ad": "Kıymalı Pide",
+    "porsiyon": "1 adet (~280g)",
+    "kcal": 620,
+    "protein": 26,
+    "karbonhidrat": 62,
+    "yag": 28
+  },
+  {
+    "ad": "Etli Ekmek",
+    "porsiyon": "1 adet (~200g)",
+    "kcal": 480,
+    "protein": 20,
+    "karbonhidrat": 50,
+    "yag": 20
+  },
+  {
+    "ad": "Cheeseburger",
+    "porsiyon": "1 adet (~200g)",
+    "kcal": 500,
+    "protein": 24,
+    "karbonhidrat": 34,
+    "yag": 30
+  },
+  {
+    "ad": "Pizza (1 Dilim)",
+    "porsiyon": "1 dilim (~120g)",
+    "kcal": 280,
+    "protein": 12,
+    "karbonhidrat": 32,
+    "yag": 11
+  },
+  {
+    "ad": "Tavuk Burger",
+    "porsiyon": "1 adet (~220g)",
+    "kcal": 460,
+    "protein": 26,
+    "karbonhidrat": 38,
+    "yag": 21
+  },
+  {
+    "ad": "Patates Kızartması",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 380,
+    "protein": 4,
+    "karbonhidrat": 48,
+    "yag": 18
+  },
+  {
+    "ad": "Çıtır Tavuk (5 Parça)",
+    "porsiyon": "5 parça (~200g)",
+    "kcal": 470,
+    "protein": 26,
+    "karbonhidrat": 24,
+    "yag": 30
+  },
+  {
+    "ad": "Sosisli Sandviç",
+    "porsiyon": "1 adet (~150g)",
+    "kcal": 400,
+    "protein": 15,
+    "karbonhidrat": 36,
+    "yag": 21
+  },
+  {
+    "ad": "Nohutlu Pilav",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 280,
+    "protein": 8,
+    "karbonhidrat": 48,
+    "yag": 6
+  },
+  {
+    "ad": "İç Pilav",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 300,
+    "protein": 6,
+    "karbonhidrat": 46,
+    "yag": 10
+  },
+  {
+    "ad": "Şehriyeli Pilav",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 260,
+    "protein": 6,
+    "karbonhidrat": 48,
+    "yag": 5
+  },
+  {
+    "ad": "Fırın Makarna",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 420,
+    "protein": 16,
+    "karbonhidrat": 46,
+    "yag": 18
+  },
+  {
+    "ad": "Kremalı Makarna",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 450,
+    "protein": 12,
+    "karbonhidrat": 44,
+    "yag": 24
+  },
+  {
+    "ad": "Domates Soslu Makarna",
+    "porsiyon": "1 porsiyon (~250g)",
+    "kcal": 320,
+    "protein": 10,
+    "karbonhidrat": 54,
+    "yag": 7
+  },
+  {
+    "ad": "Kuskus",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 230,
+    "protein": 6,
+    "karbonhidrat": 46,
+    "yag": 2
+  },
+  {
+    "ad": "Patlıcan Salatası",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 130,
+    "protein": 2,
+    "karbonhidrat": 10,
+    "yag": 9
+  },
+  {
+    "ad": "Piyaz",
+    "porsiyon": "1 porsiyon (~200g)",
+    "kcal": 220,
+    "protein": 9,
+    "karbonhidrat": 26,
+    "yag": 9
+  },
+  {
+    "ad": "Ezme Salata",
+    "porsiyon": "1 porsiyon (~100g)",
+    "kcal": 70,
+    "protein": 2,
+    "karbonhidrat": 10,
+    "yag": 3
+  },
+  {
+    "ad": "Rus Salatası",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 260,
+    "protein": 4,
+    "karbonhidrat": 18,
+    "yag": 19
+  },
+  {
+    "ad": "Mercimek Köftesi (Vegan)",
+    "porsiyon": "5 adet (~150g)",
+    "kcal": 210,
+    "protein": 7,
+    "karbonhidrat": 36,
+    "yag": 4
+  },
+  {
+    "ad": "Haydari",
+    "porsiyon": "1 porsiyon (~100g)",
+    "kcal": 110,
+    "protein": 6,
+    "karbonhidrat": 5,
+    "yag": 8
+  },
+  {
+    "ad": "Muhammara",
+    "porsiyon": "1 porsiyon (~100g)",
+    "kcal": 190,
+    "protein": 4,
+    "karbonhidrat": 12,
+    "yag": 15
+  },
+  {
+    "ad": "Acılı Ezme",
+    "porsiyon": "1 porsiyon (~100g)",
+    "kcal": 60,
+    "protein": 2,
+    "karbonhidrat": 9,
+    "yag": 2
+  },
+  {
+    "ad": "Kısır",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 210,
+    "protein": 5,
+    "karbonhidrat": 32,
+    "yag": 7
+  },
+  {
+    "ad": "Sucuklu Yumurta",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 320,
+    "protein": 18,
+    "karbonhidrat": 2,
+    "yag": 27
+  },
+  {
+    "ad": "Kaşarlı Omlet",
+    "porsiyon": "1 porsiyon (2 yumurta)",
+    "kcal": 280,
+    "protein": 18,
+    "karbonhidrat": 2,
+    "yag": 22
+  },
+  {
+    "ad": "Kaymak",
+    "porsiyon": "2 yemek kaşığı (~30g)",
+    "kcal": 130,
+    "protein": 2,
+    "karbonhidrat": 1,
+    "yag": 13
+  },
+  {
+    "ad": "Peynir Tabağı (Karışık)",
+    "porsiyon": "1 porsiyon (~100g)",
+    "kcal": 300,
+    "protein": 20,
+    "karbonhidrat": 2,
+    "yag": 24
+  },
+  {
+    "ad": "Zeytin Ezmesi",
+    "porsiyon": "2 yemek kaşığı (~30g)",
+    "kcal": 90,
+    "protein": 1,
+    "karbonhidrat": 2,
+    "yag": 9
+  },
+  {
+    "ad": "Kete",
+    "porsiyon": "1 adet (~100g)",
+    "kcal": 320,
+    "protein": 7,
+    "karbonhidrat": 42,
+    "yag": 14
+  },
+  {
+    "ad": "Tereyağı",
+    "porsiyon": "1 tatlı kaşığı (~10g)",
+    "kcal": 72,
+    "protein": 0,
+    "karbonhidrat": 0,
+    "yag": 8
+  },
+  {
+    "ad": "Krem Peynir",
+    "porsiyon": "2 yemek kaşığı (~30g)",
+    "kcal": 100,
+    "protein": 2,
+    "karbonhidrat": 2,
+    "yag": 10
+  },
+  {
+    "ad": "Çilek",
+    "porsiyon": "1 su bardağı (~150g)",
+    "kcal": 48,
+    "protein": 1,
+    "karbonhidrat": 11,
+    "yag": 0
+  },
+  {
+    "ad": "Kiraz",
+    "porsiyon": "1 su bardağı (~150g)",
+    "kcal": 95,
+    "protein": 2,
+    "karbonhidrat": 22,
+    "yag": 0
+  },
+  {
+    "ad": "Şeftali",
+    "porsiyon": "1 orta boy (~150g)",
+    "kcal": 60,
+    "protein": 1,
+    "karbonhidrat": 14,
+    "yag": 0
+  },
+  {
+    "ad": "Kayısı",
+    "porsiyon": "3 adet (~120g)",
+    "kcal": 55,
+    "protein": 2,
+    "karbonhidrat": 13,
+    "yag": 0
+  },
+  {
+    "ad": "Armut",
+    "porsiyon": "1 orta boy (~150g)",
+    "kcal": 85,
+    "protein": 1,
+    "karbonhidrat": 22,
+    "yag": 0
+  },
+  {
+    "ad": "Nar",
+    "porsiyon": "1 su bardağı taneleri (~150g)",
+    "kcal": 110,
+    "protein": 2,
+    "karbonhidrat": 25,
+    "yag": 1
+  },
+  {
+    "ad": "Antep Fıstığı",
+    "porsiyon": "1 avuç (~30g)",
+    "kcal": 170,
+    "protein": 6,
+    "karbonhidrat": 8,
+    "yag": 14
+  },
+  {
+    "ad": "Kuru Kayısı",
+    "porsiyon": "5 adet (~40g)",
+    "kcal": 100,
+    "protein": 1,
+    "karbonhidrat": 25,
+    "yag": 0
+  },
+  {
+    "ad": "Kuru Üzüm",
+    "porsiyon": "2 yemek kaşığı (~30g)",
+    "kcal": 90,
+    "protein": 1,
+    "karbonhidrat": 22,
+    "yag": 0
+  },
+  {
+    "ad": "Güllaç",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 240,
+    "protein": 6,
+    "karbonhidrat": 34,
+    "yag": 8
+  },
+  {
+    "ad": "Trileçe",
+    "porsiyon": "1 dilim (~120g)",
+    "kcal": 320,
+    "protein": 6,
+    "karbonhidrat": 40,
+    "yag": 15
+  },
+  {
+    "ad": "Muhallebi",
+    "porsiyon": "1 kase (~150g)",
+    "kcal": 190,
+    "protein": 4,
+    "karbonhidrat": 30,
+    "yag": 6
+  },
+  {
+    "ad": "Dondurma (Sade, 2 top)",
+    "porsiyon": "2 top (~100g)",
+    "kcal": 210,
+    "protein": 4,
+    "karbonhidrat": 24,
+    "yag": 11
+  },
+  {
+    "ad": "Profiterol",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 380,
+    "protein": 6,
+    "karbonhidrat": 38,
+    "yag": 22
+  },
+  {
+    "ad": "Ekmek Kadayıfı",
+    "porsiyon": "1 dilim (~120g)",
+    "kcal": 340,
+    "protein": 5,
+    "karbonhidrat": 46,
+    "yag": 15
+  },
+  {
+    "ad": "Şöbiyet",
+    "porsiyon": "1 dilim (~100g)",
+    "kcal": 420,
+    "protein": 6,
+    "karbonhidrat": 40,
+    "yag": 27
+  },
+  {
+    "ad": "Lokma Tatlısı",
+    "porsiyon": "5 adet (~120g)",
+    "kcal": 330,
+    "protein": 4,
+    "karbonhidrat": 44,
+    "yag": 16
+  },
+  {
+    "ad": "Kabak Tatlısı",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 210,
+    "protein": 2,
+    "karbonhidrat": 44,
+    "yag": 3
+  },
+  {
+    "ad": "Midye Tava",
+    "porsiyon": "10 adet (~150g)",
+    "kcal": 320,
+    "protein": 10,
+    "karbonhidrat": 34,
+    "yag": 16
+  },
+  {
+    "ad": "Kestane Kebap",
+    "porsiyon": "1 porsiyon (~150g)",
+    "kcal": 210,
+    "protein": 3,
+    "karbonhidrat": 46,
+    "yag": 1
+  },
+  {
+    "ad": "Gözleme (Peynirli)",
+    "porsiyon": "1 adet (~180g)",
+    "kcal": 380,
+    "protein": 13,
+    "karbonhidrat": 42,
+    "yag": 17
+  },
+  {
+    "ad": "Waffle (Çikolatalı)",
+    "porsiyon": "1 adet (~150g)",
+    "kcal": 420,
+    "protein": 6,
+    "karbonhidrat": 52,
+    "yag": 20
+  },
+  {
+    "ad": "Nutella Krep",
+    "porsiyon": "1 adet (~150g)",
+    "kcal": 380,
+    "protein": 6,
+    "karbonhidrat": 50,
+    "yag": 17
+  },
+  {
+    "ad": "Ayvalık Tostu",
+    "porsiyon": "1 adet (~200g)",
+    "kcal": 480,
+    "protein": 18,
+    "karbonhidrat": 44,
+    "yag": 26
+  },
+  {
+    "ad": "Kumru",
+    "porsiyon": "1 adet (~180g)",
+    "kcal": 420,
+    "protein": 16,
+    "karbonhidrat": 44,
+    "yag": 19
+  },
+  {
+    "ad": "Kaşarlı Tost",
+    "porsiyon": "1 adet (~150g)",
+    "kcal": 380,
+    "protein": 15,
+    "karbonhidrat": 34,
+    "yag": 20
+  },
+  {
+    "ad": "Portakal Suyu (Taze)",
+    "porsiyon": "1 bardak (~200ml)",
+    "kcal": 90,
+    "protein": 1,
+    "karbonhidrat": 21,
+    "yag": 0
+  },
+  {
+    "ad": "Kola",
+    "porsiyon": "1 kutu (~330ml)",
+    "kcal": 140,
+    "protein": 0,
+    "karbonhidrat": 35,
+    "yag": 0
+  },
+  {
+    "ad": "Gazoz",
+    "porsiyon": "1 şişe (~200ml)",
+    "kcal": 85,
+    "protein": 0,
+    "karbonhidrat": 21,
+    "yag": 0
+  },
+  {
+    "ad": "Süt (Tam Yağlı)",
+    "porsiyon": "1 bardak (~200ml)",
+    "kcal": 122,
+    "protein": 6,
+    "karbonhidrat": 10,
+    "yag": 6
+  },
+  {
+    "ad": "Muzlu Smoothie",
+    "porsiyon": "1 bardak (~250ml)",
+    "kcal": 180,
+    "protein": 4,
+    "karbonhidrat": 36,
+    "yag": 2
+  },
+  {
+    "ad": "Milkshake (Çikolatalı)",
+    "porsiyon": "1 bardak (~300ml)",
+    "kcal": 350,
+    "protein": 8,
+    "karbonhidrat": 52,
+    "yag": 12
+  },
+  {
+    "ad": "Buzlu Çay (Şekerli)",
+    "porsiyon": "1 bardak (~250ml)",
+    "kcal": 90,
+    "protein": 0,
+    "karbonhidrat": 23,
+    "yag": 0
+  },
+  {
+    "ad": "Nane Limon",
+    "porsiyon": "1 bardak (~250ml)",
+    "kcal": 60,
+    "protein": 0,
+    "karbonhidrat": 15,
+    "yag": 0
   }
 ]
